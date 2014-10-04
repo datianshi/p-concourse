@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd p-concourse
+
+bundle install
+bundle exec hangar --help
