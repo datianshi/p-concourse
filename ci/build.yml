@@ -1,6 +1,4 @@
-#!/bin/sh
+image: docker:///ruby#2.1
 
-cd p-concourse
-
-bundle install
-bundle exec hangar --help
+run:
+  path: p-concourse/ci/scripts/build.sh
