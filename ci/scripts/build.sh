@@ -13,4 +13,4 @@ bundle exec hangar \
   --product-version 0.1 \
   --stemcell-dir ../vsphere-stemcell \
   --release-dir ../final-release \
-    --metadata-template
+  --metadata-template metadata/metadata.yml.erb
