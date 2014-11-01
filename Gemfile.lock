@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/xoebus/hangar.git
-  revision: d8280f74c2ec1285f5f9135a5ccebeaff21b2393
+  revision: 854756a398c79b393de26e0269e13908708ef492
   specs:
     hangar (0.0.1)
       rubyzip (~> 1.1.6)

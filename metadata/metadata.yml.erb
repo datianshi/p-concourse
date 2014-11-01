@@ -11,9 +11,9 @@ releases:
 - name: <%= releases["concourse"].name %>
   file: <%= releases["concourse"].file %>
   version: <%= releases["concourse"].version %>
-- name: <%= releases["garden"].name %>
-  file: <%= releases["garden"].file %>
-  version: <%= releases["garden"].version %>
+- name: <%= releases["garden-linux"].name %>
+  file: <%= releases["garden-linux"].file %>
+  version: <%= releases["garden-linux"].version %>
   
 provides_product_versions:
   - name:    <%= product_name %>
@@ -281,7 +281,7 @@ job_types:
 
   - name: garden
     template: garden
-    release: <%= releases["garden"].name %>
+    release: <%= releases["garden-linux"].name %>
 
     resource_label: Garden
     description: Garden manages containers within which builds are run
