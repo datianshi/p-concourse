@@ -12,11 +12,10 @@ bundle install
 echo "Building product..."
 bundle exec hangar \
   --product-name p-concourse \
-  --product-version 0.1 \
+  --product-version $(cat ../version/number) \
   --stemcell-dir ../vsphere-stemcell \
   --release-dir ../final-release \
   --release-dir ../garden-linux-release \
   --metadata-template metadata/metadata.yml.erb
 
-ls *.pivotal
 file p-concourse.pivotal
