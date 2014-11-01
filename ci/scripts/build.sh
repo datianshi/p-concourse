@@ -7,6 +7,9 @@ cd p-concourse
 
 gem install bundler --no-rdoc --no-ri
 
+ls -la ../vsphere-stemcell
+ls -la ../final-release
+
 bundle install
 bundle exec hangar \
   --product-name p-concourse \
