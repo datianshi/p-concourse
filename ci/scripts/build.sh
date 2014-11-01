@@ -18,4 +18,4 @@ bundle exec hangar \
   --release-dir ../garden-linux-release \
   --metadata-template metadata/metadata.yml.erb
 
-file p-concourse.pivotal
+file *.pivotal
