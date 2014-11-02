@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
 
-gem 'hangar', github: 'xoebus/hangar'
+gem 'hangar', github: 'concourse/hangar'

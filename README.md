@@ -10,4 +10,4 @@ with the resources from the pipeline.
 
 Currently the products may only be deployed to vSphere.
 
-[hangar]: https://github.com/xoebus/hangar
+[hangar]: https://github.com/concourse/hangar

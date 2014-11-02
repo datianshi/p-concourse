@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/xoebus/hangar.git
+  remote: git://github.com/concourse/hangar.git
   revision: 4c7f85f5d02a9c0b2788a0bd0bd0f59f7a24452f
   specs:
     hangar (0.0.1)
