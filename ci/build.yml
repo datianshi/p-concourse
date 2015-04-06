@@ -1,5 +1,13 @@
 platform: linux
+
 image: docker:///ruby#2.1
 
+inputs:
+  - name: p-concourse
+  - name: final-release
+  - name: garden-linux-release
+  - name: vsphere-stemcell
+  - name: version
+  
 run:
   path: p-concourse/ci/scripts/build.sh
