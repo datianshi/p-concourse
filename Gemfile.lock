@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/concourse/hangar.git
-  revision: 4da5bfd1473ed4f435d3b1adba1549eb18c4065c
+  revision: 25a6cf7899e60f7a3f2f06994f74f9d0ee7a54a7
   specs:
     hangar (0.0.1)
       minitar (~> 0.5.4)
@@ -17,3 +17,6 @@ PLATFORMS
 
 DEPENDENCIES
   hangar!
+
+BUNDLED WITH
+   1.10.5
