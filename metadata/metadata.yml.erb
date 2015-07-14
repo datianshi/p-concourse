@@ -127,7 +127,7 @@ job_types:
   manifest: |
     atc:
       basic_auth_username: (( web_credentials.identity ))
-      basic_auth_encrypted_password: (( web_credentials.bcrypt_encrypted_password ))
+      basic_auth_password: (( web_credentials.password ))
 
       postgresql:
         database: atc
