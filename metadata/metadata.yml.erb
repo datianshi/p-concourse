@@ -97,8 +97,8 @@ job_types:
   - name: persistent_disk
     type: integer
     label: Persistent Disk
-    configurable: true
-    default: 1024
+    configurable: false
+    default: 0
   - name: cpu
     type: integer
     label: CPU
@@ -112,7 +112,7 @@ job_types:
     type: integer
     label: Instances
     default: 1
-    configurable: false
+    configurable: true
   property_blueprints:
   - name: vm_credentials
     type: salted_credentials
