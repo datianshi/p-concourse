@@ -14,6 +14,9 @@ releases:
 - name: <%= releases["garden-linux"].name %>
   file: <%= releases["garden-linux"].file %>
   version: <%= releases["garden-linux"].version %>
+- name: <%= releases["route-registrar"].name %>
+  file: <%= releases["route-registrar"].file %>
+  version: <%= releases["route-registrar"].version %>
 
 provides_product_versions:
   - name:    <%= product_name %>
@@ -80,6 +83,8 @@ job_types:
     release: <%= releases["concourse"].name %>
   - name: tsa
     release: <%= releases["concourse"].name %>
+  - name: route-registrar
+    release: <%= releases["route-registrar"].name %>
   resource_label: Web
   description: Web contains ATC (Air Traffic Controller) which provides UI and API
     access. It is responsible for scheduling builds.
@@ -146,6 +151,17 @@ job_types:
       agent:
         servers:
           lan: (( .discovery.ips ))
+
+    route_registrar:
+      external_host: p-concourse.(( $runtime.system_domain ))
+      external_ip: (( first_ip ))
+      port: 8080
+      message_bus_servers:
+      - host: (( ..cf.nats.first_ip )):4222
+        user: (( ..cf.nats.credentials.identity ))
+        password: (( ..cf.nats.credentials.password ))
+      health_checker:
+        name: concourse
 
 - name: db
   templates:
