@@ -2,6 +2,8 @@
 
 set -e -x
 
+PRODUCT=$PWD/product
+
 export GEM_HOME=$HOME/.gems
 export PATH=$GEM_HOME/bin:$PATH
 
@@ -20,3 +22,5 @@ bundle exec hangar \
   --metadata-template metadata/metadata.yml.erb
 
 file *.pivotal
+
+mv *.pivotal $PRODUCT

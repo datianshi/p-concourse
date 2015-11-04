@@ -7,6 +7,9 @@ inputs:
 - name: final-release
 - name: garden-linux-release
 - name: version
-  
+
+outputs:
+- name: product
+
 run:
   path: p-concourse/ci/scripts/build.sh
